@@ -1,10 +1,10 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Yafah Russek Portfolio</title>
-<meta name="description" content="Yafah Russek, Texas State finance and data analytics student. Projects in banking, credit, and financial access.">
+<meta name="description" content="Yafah Russek, Texas State finance and data analytics student. Projects in credit analysis, equity research, and financial strategy.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23501214'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-weight='800' font-size='28' fill='%23D7BD8A'%3EYR%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yafahxrussek.github.io/">
 <meta property="og:title" content="Yafah Russek | Finance and Data Analytics">
-<meta property="og:description" content="Credit analysis, equity research, and market studies from a Texas State finance student building a career in commercial banking.">
+<meta property="og:description" content="Credit analysis, equity research, and market studies from a Texas State finance and data analytics student.">
 <meta property="og:image" content="https://yafahxrussek.github.io/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -450,75 +450,83 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0
 #view-ips footer{padding-block:30px 40px;font-family:var(--mono);font-size:.74rem;color:var(--muted)}
 html[lang="en"] [lang="es"]:not(html){display:none}
 html[lang="es"] [lang="en"]:not(html){display:none}
-/* XOM equity research view */
-#view-xom .wrap{max-width:1040px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
-#view-xom .band{background:var(--maroon);color:var(--on-maroon);border-bottom:6px solid var(--gold-bright)}
-#view-xom .band .wrap{padding-block:clamp(36px,6vw,60px) clamp(28px,4vw,42px)}
-#view-xom .eyebrow{font-family:var(--mono);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-bright);margin:0 0 12px}
-#view-xom h1{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,6.5vw,4rem);letter-spacing:-.035em;line-height:.95;margin:0 0 14px;text-wrap:balance}
-#view-xom .band p{margin:0;max-width:60ch;color:#EBDCD6}
-#view-xom .meta{font-family:var(--mono);font-size:.74rem;color:#D8C3BC;margin-top:16px}
-#view-xom .decision{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-top:-24px;position:relative;overflow:hidden;box-shadow:0 8px 24px rgba(40,10,10,.08)}
-#view-xom .decision > div{padding:16px 18px;border-right:1px solid var(--line);display:grid;gap:4px;align-content:start;min-width:0}
-#view-xom .decision > div:last-child{border-right:0}
-#view-xom .decision .k,#view-xom .facts .k{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-#view-xom .decision .v{font-family:var(--display);font-weight:800;font-size:1.25rem;letter-spacing:-.015em;line-height:1.15}
-#view-xom .decision .v.hold{color:var(--gold)}
-#view-xom .decision .s{font-size:.9rem;color:var(--muted)}
-@media (max-width:800px){#view-xom .decision{grid-template-columns:1fr 1fr;margin-top:20px}
-#view-xom .decision > div:nth-child(2){border-right:0}
-#view-xom .decision > div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
-#view-xom section{padding-block:clamp(34px,5vw,54px);border-bottom:1px solid var(--line)}
-#view-xom section:last-child{border-bottom:0}
-#view-xom .num{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
-#view-xom h2{font-family:var(--display);font-weight:800;font-size:clamp(1.55rem,3.6vw,2.2rem);letter-spacing:-.025em;line-height:1.05;margin:0 0 12px;text-wrap:balance}
-#view-xom h3{font-family:var(--display);font-weight:600;font-size:1.15rem;margin:0 0 6px}
-#view-xom .prose{max-width:66ch}
-#view-xom .prose p{margin:0 0 12px}
-#view-xom .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px;margin-top:14px}
-#view-xom .facts > div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:2px}
-#view-xom .facts .v{font-family:var(--display);font-weight:800;font-size:1.2rem;letter-spacing:-.01em}
-#view-xom .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:14px}
-@media (max-width:820px){#view-xom .two{grid-template-columns:1fr}}
-#view-xom .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;min-width:0}
-#view-xom .sub{font-size:.92rem;color:var(--muted);margin:0 0 12px;font-family:var(--mono)}
-#view-xom .note{font-size:.94rem;margin:12px 0 0;padding-top:10px;border-top:1px solid var(--line)}
-#view-xom .tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-top:14px}
-#view-xom .tbl.flat{border:0;margin:0;border-radius:0}
-#view-xom table{border-collapse:collapse;width:100%;min-width:600px;font-variant-numeric:tabular-nums}
-#view-xom table.narrow{min-width:0}
-#view-xom th,#view-xom td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-family:var(--mono);font-size:.82rem}
-#view-xom th:first-child,#view-xom td:first-child{text-align:left;font-family:var(--body);font-size:.98rem}
-#view-xom table.narrow td{padding:8px 4px}
-#view-xom thead th{font-weight:500;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-#view-xom td.up{color:var(--good)}
-#view-xom td.dn{color:var(--bad)}
-#view-xom td.pf{background:var(--gold-soft)}
-#view-xom tbody tr:last-child td{border-bottom:0}
-#view-xom .bars{display:grid;gap:14px}
-#view-xom .bar{display:grid;grid-template-columns:11em 1fr;gap:10px;align-items:center;font-family:var(--mono);font-size:.78rem}
-#view-xom .bar .lab{color:var(--muted);line-height:1.3}
-#view-xom .bar.base .lab{color:var(--ink)}
+/* Equity research views: XOM and Citi share one layout */
+:is(#view-xom,#view-citi) .wrap{max-width:1040px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+:is(#view-xom,#view-citi) .band{background:var(--maroon);color:var(--on-maroon);border-bottom:6px solid var(--gold-bright)}
+:is(#view-xom,#view-citi) .band .wrap{padding-block:clamp(36px,6vw,60px) clamp(28px,4vw,42px)}
+:is(#view-xom,#view-citi) .eyebrow{font-family:var(--mono);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-bright);margin:0 0 12px}
+:is(#view-xom,#view-citi) h1{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,6.5vw,4rem);letter-spacing:-.035em;line-height:.95;margin:0 0 14px;text-wrap:balance}
+:is(#view-xom,#view-citi) .band p{margin:0;max-width:60ch;color:#EBDCD6}
+:is(#view-xom,#view-citi) .meta{font-family:var(--mono);font-size:.74rem;color:#D8C3BC;margin-top:16px}
+:is(#view-xom,#view-citi) .decision{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-top:-24px;position:relative;overflow:hidden;box-shadow:0 8px 24px rgba(40,10,10,.08)}
+:is(#view-xom,#view-citi) .decision > div{padding:16px 18px;border-right:1px solid var(--line);display:grid;gap:4px;align-content:start;min-width:0}
+:is(#view-xom,#view-citi) .decision > div:last-child{border-right:0}
+:is(#view-xom,#view-citi) .decision .k,:is(#view-xom,#view-citi) .facts .k{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+:is(#view-xom,#view-citi) .decision .v{font-family:var(--display);font-weight:800;font-size:1.25rem;letter-spacing:-.015em;line-height:1.15}
+:is(#view-xom,#view-citi) .decision .v.hold{color:var(--gold)}
+:is(#view-xom,#view-citi) .decision .s{font-size:.9rem;color:var(--muted)}
+@media (max-width:800px){:is(#view-xom,#view-citi) .decision{grid-template-columns:1fr 1fr;margin-top:20px}
+:is(#view-xom,#view-citi) .decision > div:nth-child(2){border-right:0}
+:is(#view-xom,#view-citi) .decision > div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+:is(#view-xom,#view-citi) section{padding-block:clamp(34px,5vw,54px);border-bottom:1px solid var(--line)}
+:is(#view-xom,#view-citi) section:last-child{border-bottom:0}
+:is(#view-xom,#view-citi) .num{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+:is(#view-xom,#view-citi) h2{font-family:var(--display);font-weight:800;font-size:clamp(1.55rem,3.6vw,2.2rem);letter-spacing:-.025em;line-height:1.05;margin:0 0 12px;text-wrap:balance}
+:is(#view-xom,#view-citi) h3{font-family:var(--display);font-weight:600;font-size:1.15rem;margin:0 0 6px}
+:is(#view-xom,#view-citi) .prose{max-width:66ch}
+:is(#view-xom,#view-citi) .prose p{margin:0 0 12px}
+:is(#view-xom,#view-citi) .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px;margin-top:14px}
+:is(#view-xom,#view-citi) .facts > div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:2px}
+:is(#view-xom,#view-citi) .facts .v{font-family:var(--display);font-weight:800;font-size:1.2rem;letter-spacing:-.01em}
+:is(#view-xom,#view-citi) .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:14px}
+@media (max-width:820px){:is(#view-xom,#view-citi) .two{grid-template-columns:1fr}}
+:is(#view-xom,#view-citi) .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;min-width:0}
+:is(#view-xom,#view-citi) .sub{font-size:.92rem;color:var(--muted);margin:0 0 12px;font-family:var(--mono)}
+:is(#view-xom,#view-citi) .note{font-size:.94rem;margin:12px 0 0;padding-top:10px;border-top:1px solid var(--line)}
+:is(#view-xom,#view-citi) .tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-top:14px}
+:is(#view-xom,#view-citi) .tbl.flat{border:0;margin:0;border-radius:0}
+:is(#view-xom,#view-citi) table{border-collapse:collapse;width:100%;min-width:600px;font-variant-numeric:tabular-nums}
+:is(#view-xom,#view-citi) table.narrow{min-width:0}
+:is(#view-xom,#view-citi) th,:is(#view-xom,#view-citi) td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-family:var(--mono);font-size:.82rem}
+:is(#view-xom,#view-citi) th:first-child,:is(#view-xom,#view-citi) td:first-child{text-align:left;font-family:var(--body);font-size:.98rem}
+:is(#view-xom,#view-citi) table.narrow td{padding:8px 4px}
+:is(#view-xom,#view-citi) thead th{font-weight:500;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+:is(#view-xom,#view-citi) td.up{color:var(--good)}
+:is(#view-xom,#view-citi) td.dn{color:var(--bad)}
+:is(#view-xom,#view-citi) td.pf{background:var(--gold-soft)}
+:is(#view-xom,#view-citi) tbody tr:last-child td{border-bottom:0}
+:is(#view-xom,#view-citi) .bars{display:grid;gap:14px}
+:is(#view-xom,#view-citi) .bar{display:grid;grid-template-columns:11em 1fr;gap:10px;align-items:center;font-family:var(--mono);font-size:.78rem}
+:is(#view-xom,#view-citi) .bar .lab{color:var(--muted);line-height:1.3}
+:is(#view-xom,#view-citi) .bar.base .lab{color:var(--ink)}
 #view-xom .bar .tr{position:relative;height:26px;margin-right:5.5em;background:linear-gradient(90deg,transparent calc(163.75/280*100% - 1px),var(--ink) calc(163.75/280*100% - 1px),var(--ink) calc(163.75/280*100% + 1px),transparent calc(163.75/280*100% + 1px))}
-#view-xom .bar .f{height:100%;background:var(--peer);border-radius:0 4px 4px 0;opacity:.85}
-#view-xom .bar.base .f{background:var(--maroon);opacity:1}
-#view-xom .bar .val{position:absolute;top:50%;transform:translateY(-50%);margin-left:8px;color:var(--ink);white-space:nowrap}
-@media (max-width:560px){#view-xom .bar{grid-template-columns:1fr}}
-#view-xom .sr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:14px}
-@media (max-width:820px){#view-xom .sr{grid-template-columns:1fr}}
-#view-xom .sr ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-#view-xom .sr li{padding-left:18px;position:relative;font-size:.98rem}
-#view-xom .sr li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%}
-#view-xom .str li::before{background:var(--good)}
-#view-xom .rsk li::before{background:var(--bad)}
-#view-xom .sr li b{font-family:var(--display);font-weight:600}
-#view-xom .sr li .m{display:block;font-size:.9rem;color:var(--muted);margin-top:2px}
-#view-xom .verdict{background:var(--surface);border:2px solid var(--gold-bright);border-radius:14px;padding:clamp(20px,3vw,30px)}
-#view-xom .why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:8px}
-@media (max-width:820px){#view-xom .why{grid-template-columns:1fr}}
-#view-xom .why > div{border-top:3px solid var(--gold-bright);padding-top:12px}
-#view-xom .why p{margin:0;font-size:.98rem}
-#view-xom footer{padding-block:24px 40px;font-family:var(--mono);font-size:.72rem;color:var(--muted);line-height:1.7}
+#view-citi .bar .tr{position:relative;height:26px;margin-right:5.5em;background:linear-gradient(90deg,transparent calc(122.27/200*100% - 1px),var(--ink) calc(122.27/200*100% - 1px),var(--ink) calc(122.27/200*100% + 1px),transparent calc(122.27/200*100% + 1px))}
+:is(#view-xom,#view-citi) .bar .f{height:100%;background:var(--peer);border-radius:0 4px 4px 0;opacity:.85}
+:is(#view-xom,#view-citi) .bar.base .f{background:var(--maroon);opacity:1}
+:is(#view-xom,#view-citi) .bar .val{position:absolute;top:50%;transform:translateY(-50%);margin-left:8px;color:var(--ink);white-space:nowrap}
+@media (max-width:560px){:is(#view-xom,#view-citi) .bar{grid-template-columns:1fr}}
+:is(#view-xom,#view-citi) .sr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:14px}
+@media (max-width:820px){:is(#view-xom,#view-citi) .sr{grid-template-columns:1fr}}
+:is(#view-xom,#view-citi) .sr ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+:is(#view-xom,#view-citi) .sr li{padding-left:18px;position:relative;font-size:.98rem}
+:is(#view-xom,#view-citi) .sr li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%}
+:is(#view-xom,#view-citi) .str li::before{background:var(--good)}
+:is(#view-xom,#view-citi) .rsk li::before{background:var(--bad)}
+:is(#view-xom,#view-citi) .sr li b{font-family:var(--display);font-weight:600}
+:is(#view-xom,#view-citi) .sr li .m{display:block;font-size:.9rem;color:var(--muted);margin-top:2px}
+:is(#view-xom,#view-citi) .verdict{background:var(--surface);border:2px solid var(--gold-bright);border-radius:14px;padding:clamp(20px,3vw,30px)}
+:is(#view-xom,#view-citi) .why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:8px}
+@media (max-width:820px){:is(#view-xom,#view-citi) .why{grid-template-columns:1fr}}
+:is(#view-xom,#view-citi) .why > div{border-top:3px solid var(--gold-bright);padding-top:12px}
+:is(#view-xom,#view-citi) .why p{margin:0;font-size:.98rem}
+:is(#view-xom,#view-citi) footer{padding-block:24px 40px;font-family:var(--mono);font-size:.72rem;color:var(--muted);line-height:1.7}
+:is(#view-xom,#view-citi) .series{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+:is(#view-xom,#view-citi) .series:hover{border-color:var(--gold-bright);transform:translateY(-2px)}
+:is(#view-xom,#view-citi) .series > span:first-child{display:grid;gap:2px}
+:is(#view-xom,#view-citi) .series .k{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+:is(#view-xom,#view-citi) .series b{font-family:var(--display);font-weight:700;font-size:1.1rem;letter-spacing:-.01em}
+:is(#view-xom,#view-citi) .series .go{font-family:var(--mono);font-size:.78rem;border-bottom:1.5px solid var(--gold-bright)}
+#view-home .xlinks{display:flex;gap:8px;flex-wrap:wrap}
 /* Experience icons and project links */
 #view-home .st b span{font:inherit;color:inherit;letter-spacing:inherit}
 #view-home .xhead{display:flex;align-items:center;gap:14px}
@@ -556,8 +564,8 @@ html[lang="es"] [lang="en"]:not(html){display:none}
       <p class="eyebrow"><span lang="en">Finance · Data Analytics · Texas State '27</span><span lang="es">Finanzas · Analítica de Datos · Texas State '27</span></p>
       <h1>Yafah<br>Russek<em>.</em></h1>
       <p class="lede">
-        <span lang="en">I use data to make banking work for more people.</span>
-        <span lang="es">Uso datos para que la banca funcione para más personas.</span>
+        <span lang="en">I turn financial data into decisions, and I want finance to work for more people.</span>
+        <span lang="es">Convierto datos financieros en decisiones, y quiero que las finanzas funcionen para más personas.</span>
       </p>
       <div class="cta">
         <a class="btn solid" href="#projects"><span lang="en">See my work</span><span lang="es">Ver mi trabajo</span> →</a>
@@ -586,7 +594,7 @@ html[lang="es"] [lang="en"]:not(html){display:none}
         <div class="row"><dt><span lang="en">Graduating</span><span lang="es">Graduación</span></dt><dd><span lang="en">May 2027</span><span lang="es">Mayo 2027</span></dd></div>
         <div class="row"><dt>GPA</dt><dd>3.97 · <span lang="en">President&#39;s List</span><span lang="es">Lista del Presidente</span></dd></div>
         <div class="row"><dt><span lang="en">Languages</span><span lang="es">Idiomas</span></dt><dd><span lang="en">English, Spanish</span><span lang="es">Inglés, Español</span></dd></div>
-        <div class="row"><dt><span lang="en">Focus</span><span lang="es">Enfoque</span></dt><dd><span lang="en">Commercial banking, credit, financial access</span><span lang="es">Banca comercial, crédito, acceso financiero</span></dd></div>
+        <div class="row"><dt><span lang="en">Focus</span><span lang="es">Enfoque</span></dt><dd><span lang="en">Credit, valuation, financial access</span><span lang="es">Crédito, valuación, acceso financiero</span></dd></div>
         <div class="row"><dt><span lang="en">From</span><span lang="es">De</span></dt><dd><span lang="en">Rio Grande Valley, TX · first generation</span><span lang="es">Valle del Río Grande, TX · primera generación</span></dd></div>
       </dl>
     </aside>
@@ -597,8 +605,8 @@ html[lang="es"] [lang="en"]:not(html){display:none}
   <section data-tab="home" id="about">
     <div class="sec-head"><h2><span lang="en">About me</span><span lang="es">Sobre mí</span></h2></div>
     <div class="about">
-      <p><span lang="en">I'm a first generation college student from the Rio Grande Valley, studying finance and data analytics at Texas State. My focus has always been banking, financial access, and serving underserved communities, and I'm building a career in commercial banking and credit.</span><span lang="es">Soy estudiante universitaria de primera generación del Valle del Río Grande y estudio finanzas y analítica de datos en Texas State. Mi enfoque siempre ha sido la banca, el acceso financiero y servir a comunidades desatendidas, y estoy construyendo mi carrera en banca comercial y crédito.</span></p>
-      <p><span lang="en">I've analyzed markets for a credit union, help manage a $2.2 million student investment fund, and I'm fluent in English and Spanish, which lets me serve communities that banks often miss.</span><span lang="es">He analizado mercados para una cooperativa de crédito, ayudo a manejar un fondo de inversión estudiantil de $2.2 millones y hablo inglés y español con fluidez, lo que me permite servir a comunidades que los bancos a menudo no atienden.</span></p>
+      <p><span lang="en">I'm a first generation college student from the Rio Grande Valley, studying finance and data analytics at Texas State. My focus has always been financial access and serving underserved communities. I'm building a career in finance where I get to answer real questions with data, whether that's underwriting a loan, valuing a company, or deciding where a business should grow.</span><span lang="es">Soy estudiante universitaria de primera generación del Valle del Río Grande y estudio finanzas y analítica de datos en Texas State. Mi enfoque siempre ha sido el acceso financiero y servir a comunidades desatendidas. Estoy construyendo una carrera en finanzas donde pueda responder preguntas reales con datos, ya sea aprobar un préstamo, valuar una empresa o decidir dónde debe crecer un negocio.</span></p>
+      <p><span lang="en">I've written a commercial credit memo, valued holdings for a $2.2 million student investment fund, and analyzed markets for a credit union. I'm fluent in English and Spanish, which lets me reach clients and communities that finance often misses.</span><span lang="es">He escrito un memo de crédito comercial, he valuado posiciones para un fondo de inversión estudiantil de $2.2 millones y he analizado mercados para una cooperativa de crédito. Hablo inglés y español con fluidez, lo que me permite llegar a clientes y comunidades que las finanzas a menudo no atienden.</span></p>
     </div>
   </section>
 
@@ -606,7 +614,7 @@ html[lang="es"] [lang="en"]:not(html){display:none}
     <div class="sec-head"><h2><span lang="en">Featured work</span><span lang="es">Trabajo destacado</span></h2><p><a href="#projects" style="color:inherit"><span lang="en">See all projects →</span><span lang="es">Ver todos los proyectos →</span></a></p></div>
     <div class="feat">
       <a class="fc" href="#memo"><span class="k"><span lang="en">Credit analysis</span><span lang="es">Análisis de crédito</span></span><h3><span lang="en">Levi Strauss credit memo</span><span lang="es">Memo de crédito: Levi Strauss</span></h3><p><span lang="en">Should a lender extend $250M to the company behind Levi's? My call: approve, with conditions.</span><span lang="es">¿Debería un banco prestar $250M a la empresa detrás de Levi's? Mi decisión: aprobar, con condiciones.</span></p><span class="go"><span lang="en">Read the memo →</span><span lang="es">Leer el memo →</span></span></a>
-      <a class="fc" href="#xom"><span class="k"><span lang="en">Equity research</span><span lang="es">Análisis bursátil</span></span><h3><span lang="en">ExxonMobil holding review</span><span lang="es">Revisión de ExxonMobil</span></h3><p><span lang="en">Our fund is overweight XOM. My DCF says $200.65 a share, but the premium to peers says don't add. My call: hold.</span><span lang="es">Nuestro fondo está sobreponderado en XOM. Mi DCF da $200.65 por acción, pero la prima frente a sus pares dice no comprar más. Mi decisión: mantener.</span></p><span class="go"><span lang="en">Read the analysis →</span><span lang="es">Leer el análisis →</span></span></a>
+      <a class="fc" href="#citi"><span class="k"><span lang="en">Equity research · SMIF</span><span lang="es">Análisis bursátil · SMIF</span></span><h3><span lang="en">Citigroup and ExxonMobil reviews</span><span lang="es">Revisiones de Citigroup y ExxonMobil</span></h3><p><span lang="en">Two holdings, two models: a DCF for Exxon, a payout DDM for Citi because a bank's deposits are its business. Both show upside. Both calls: hold.</span><span lang="es">Dos posiciones, dos modelos: un DCF para Exxon y un DDM de pagos para Citi, porque los depósitos de un banco son su negocio. Ambos muestran potencial. Ambas decisiones: mantener.</span></p><span class="go"><span lang="en">Start with Citi →</span><span lang="es">Empezar con Citi →</span></span></a>
       <a class="fc" href="#rbfcu"><span class="k"><span lang="en">RBFCU internship</span><span lang="es">Práctica en RBFCU</span></span><h3><span lang="en">Credit union market research</span><span lang="es">Estudio de mercado para cooperativa</span></h3><p><span lang="en">Where to grow in South Dallas, and how to keep 75,000+ members after a merger in Oklahoma City.</span><span lang="es">Dónde crecer en el sur de Dallas y cómo conservar a más de 75,000 socios tras una fusión en Oklahoma City.</span></p><span class="go"><span lang="en">View the studies →</span><span lang="es">Ver los estudios →</span></span></a>
     </div>
   </section>
@@ -636,6 +644,27 @@ html[lang="es"] [lang="en"]:not(html){display:none}
           <p><span lang="en">I was the lead analyst on XOM, one of five Energy holdings our team reviews. I built a DCF from FactSet consensus cash flows with a CAPM discount rate, compared XOM's multiples to Chevron and the sector, and tested how the value changes with beta. The DCF shows upside, but the premium to peers and an already overweight position point to Hold.</span><span lang="es">Fui la analista principal de XOM, una de las cinco posiciones de Energía que revisa nuestro equipo. Construí un DCF con flujos de caja de consenso de FactSet y una tasa de descuento CAPM, comparé los múltiplos de XOM con Chevron y el sector, y probé cómo cambia el valor según la beta. El DCF muestra potencial, pero la prima frente a sus pares y una posición ya sobreponderada apuntan a mantener.</span></p>
           <a class="btn work" href="#xom"><span lang="en">Read the analysis</span><span lang="es">Leer el análisis</span> →</a>
           <div class="viz kpis" style="margin-top:20px"><span><b>$200.65</b> <span lang="en">DCF value per share</span><span lang="es">valor DCF por acción</span></span><span><b>+22.5%</b> <span lang="en">vs. $163.75 price</span><span lang="es">vs. precio de $163.75</span></span><span><b>Hold</b> <span lang="en">recommendation</span><span lang="es">recomendación</span></span></div>
+        </div>
+      </article>
+
+      <article class="proj">
+        <aside>
+          <span class="pill done"><span lang="en">Completed</span><span lang="es">Terminado</span></span>
+          <div>
+            <div class="meta-label"><span lang="en">Type</span><span lang="es">Tipo</span></div>
+            <span lang="en">SMIF equity research, valuation lead</span><span lang="es">Análisis bursátil SMIF, responsable de la valuación</span>
+          </div>
+          <div>
+            <div class="meta-label"><span lang="en">Skills</span><span lang="es">Habilidades</span></div>
+            <div class="tools"><span>DDM</span><span>CAPM</span><span>P/TBV</span><span>FactSet</span></div>
+          </div>
+        </aside>
+        <div class="body">
+          <h3><span lang="en">Citigroup holding review</span><span lang="es">Revisión de la posición en Citigroup</span></h3>
+          <p class="q"><span lang="en">Citi's turnaround has already lifted the stock. Is there value left, and should our fund own more?</span><span lang="es">La reestructuración de Citi ya impulsó la acción. ¿Queda valor, y debería nuestro fondo tener más?</span></p>
+          <p><span lang="en">A DCF doesn't work for a bank, because deposits are the business itself. So I built a dividend discount model that counts dividends and buybacks, typed in each year's FactSet payout, and checked it against a justified price to tangible book. Both methods land near $160, well above the price, but Citi is already about 18 times its benchmark weight in our fund. My call: hold.</span><span lang="es">Un DCF no funciona para un banco, porque los depósitos son el negocio en sí. Construí un modelo de descuento de dividendos que incluye dividendos y recompras, con el pago de cada año según FactSet, y lo comparé con el precio justificado sobre valor tangible en libros. Ambos métodos dan cerca de $160, muy por encima del precio, pero Citi ya pesa unas 18 veces más en nuestro fondo que en el índice. Mi decisión: mantener.</span></p>
+          <a class="btn work" href="#citi"><span lang="en">Read the analysis</span><span lang="es">Leer el análisis</span> →</a>
+          <div class="viz kpis" style="margin-top:20px"><span><b>$164.36</b> <span lang="en">DDM value per share</span><span lang="es">valor DDM por acción</span></span><span><b>+34.4%</b> <span lang="en">vs. $122.27 price</span><span lang="es">vs. precio de $122.27</span></span><span><b>Hold</b> <span lang="en">recommendation</span><span lang="es">recomendación</span></span></div>
         </div>
       </article>
 
@@ -751,7 +780,7 @@ html[lang="es"] [lang="en"]:not(html){display:none}
           <p class="xorg">Student Managed Investment Fund · Texas State</p>
           <p class="xtxt"><span lang="en">Selected as an analyst for the student managed fund, covering the Energy and Financials sectors. I run company, industry, valuation, and risk analysis and present recommendations to the investment committee.</span><span lang="es">Seleccionada como analista del fondo administrado por estudiantes, cubriendo Energía y Finanzas. Hago análisis de empresas, industria, valuación y riesgo, y presento recomendaciones al comité de inversión.</span></p>
           <div class="xstats"><div class="st"><b>$2.2M</b><span><span lang="en">fund</span><span lang="es">fondo</span></span></div><div class="st"><b><span lang="en">Energy + Financials</span><span lang="es">Energía + Finanzas</span></b><span><span lang="en">sectors covered</span><span lang="es">sectores que cubro</span></span></div></div>
-          <div class="xfoot"><div class="xtags"><span>Valuation</span><span>DCF / DDM</span><span>Bloomberg</span></div><a class="xlink" href="#xom"><span lang="en">See the XOM review</span><span lang="es">Ver el análisis de XOM</span> →</a></div>
+          <div class="xfoot"><div class="xtags"><span>Valuation</span><span>DCF / DDM</span><span>Bloomberg</span></div><div class="xlinks"><a class="xlink" href="#citi"><span lang="en">Citi review</span><span lang="es">Análisis de Citi</span> →</a><a class="xlink" href="#xom"><span lang="en">XOM review</span><span lang="es">Análisis de XOM</span> →</a></div></div>
         </div>
       </li>
       <li class="xp cur">
@@ -879,8 +908,8 @@ html[lang="es"] [lang="en"]:not(html){display:none}
   <section id="contact" data-tab="home">
     <div class="contact">
       <div>
-        <p class="big"><span lang="en">Looking for a full time role in <em>commercial banking</em> and credit.</span><span lang="es">Busco un puesto de tiempo completo en <em>banca comercial</em> y crédito.</span></p>
-        <p style="color:var(--muted);margin:0;max-width:44ch"><span lang="en">Available starting summer 2027. Open to Austin, Houston, and Central Texas.</span><span lang="es">Disponible a partir del verano de 2027. Abierta a Austin, Houston y el centro de Texas.</span></p>
+        <p class="big"><span lang="en">Looking for a full time role in <em>finance</em>.</span><span lang="es">Busco un puesto de tiempo completo en <em>finanzas</em>.</span></p>
+        <p style="color:var(--muted);margin:0;max-width:44ch"><span lang="en">Credit, banking, investments, or financial analysis. Available starting summer 2027. Open to Austin, Houston, and Central Texas.</span><span lang="es">Crédito, banca, inversiones o análisis financiero. Disponible a partir del verano de 2027. Abierta a Austin, Houston y el centro de Texas.</span></p>
       </div>
       <div class="mailbox">
         <div class="meta-label" style="font-family:var(--mono)">Email</div>
@@ -1052,9 +1081,162 @@ html[lang="es"] [lang="en"]:not(html){display:none}
         <div><h3>What would change it</h3><p>Add on strong Q3 results (Oct. 23) or a pullback. Reduce if cash flow weakens or oil falls toward $68.</p></div>
       </div>
     </div>
+    <a class="series" href="#citi"><span><span class="k">Also in this series</span><b>Citigroup (C): why a bank needs a different model</b></span><span class="go">Read it →</span></a>
   </section>
 </main>
 <footer><div class="wrap">Sources: FactSet (prices, consensus estimates, betas, peer multiples; Oct. 5 and 6, 2026) · FRED (DGS10, 30 year breakeven inflation) · Damodaran implied equity risk premium · ExxonMobil Q2 2026 results and 2030 corporate plan · Reuters. Valuation built in the SMIF course DCF template. For educational purposes; not investment advice.</div></footer>
+</div>
+<div class="view" id="view-citi" hidden>
+<div class="backbar"><div class="in"><a class="who" href="#home">Yafah Russek<span>.</span></a><a href="#projects">← Back to projects</a></div></div>
+
+<header class="band">
+  <div class="wrap">
+    <p class="eyebrow">Equity research · Student Managed Investment Fund · Financials</p>
+    <h1>Citigroup (C)</h1>
+    <p>Citi is in the middle of one of the biggest turnarounds in banking, and our fund already holds far more of it than the benchmark does. Is there still value left, and should we own more?</p>
+    <div class="meta">Team review with one teammate · I built the valuation model, the returns comparison, and the news analysis · October 2026 · Prices as of Oct. 14, 2026</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="decision">
+    <div><span class="k">Recommendation</span><span class="v hold">Hold</span><span class="s">maintain the position</span></div>
+    <div><span class="k">DDM value per share</span><span class="v">$164.36</span><span class="s">+34.4% vs. $122.27 price</span></div>
+    <div><span class="k">Cost of equity</span><span class="v">9.70%</span><span class="s">CAPM, 5 year beta of 1.07</span></div>
+    <div><span class="k">Fund weight</span><span class="v">5.8%</span><span class="s">of domestic equity vs. 0.33% benchmark (about 18x)</span></div>
+  </div>
+
+  <section>
+    <p class="num">01 · The company</p>
+    <h2>A bank the market gave up on, now earning its way back</h2>
+    <div class="prose">
+      <p>In 2023, Citi traded at about 0.6 times its tangible book value, meaning the market valued the bank below the assets on its own balance sheet. Since then it has been simplifying the business, cleaning up with regulators, and sending a lot of cash back to shareholders.</p>
+      <p>The stock has noticed. Citi returned about 48% a year over three years, more than double the Financials sector. The question is whether the turnaround is already in the price.</p>
+    </div>
+    <div class="facts">
+      <div><span class="k">Market cap</span><span class="v">$205.1B</span></div>
+      <div><span class="k">Price / tangible book</span><span class="v">1.20x</span></div>
+      <div><span class="k">Dividend yield</span><span class="v">2.19%</span></div>
+      <div><span class="k">CET1 capital ratio</span><span class="v">12.8%</span></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="num">02 · Returns and news</p>
+    <h2>The market has already rewarded the turnaround</h2>
+    <div class="tbl"><table>
+      <thead><tr><th scope="col">Total return</th><th scope="col">Citi</th><th scope="col">Bank of America</th><th scope="col">Financials sector</th></tr></thead>
+      <tbody>
+        <tr><td>3 years, per year</td><td class="pf">47.6%</td><td>27.3%</td><td>19.9%</td></tr>
+        <tr><td>1 year</td><td class="pf">About 25%</td><td>About flat</td><td>n/a</td></tr>
+      </tbody>
+    </table></div>
+    <div class="two">
+      <div class="card"><h3>What's working</h3><p style="margin:0">Q3 earnings of $2.85 a share beat the $2.65 estimate on the best third quarter revenue in a decade, and Citi raised its 2026 return target to above 11%. It is running a $30B buyback program, has bought back $13.3B this year, and raised its dividend 12%.</p></div>
+      <div class="card"><h3>What's still in progress</h3><p style="margin:0">Citi has sold 49% of Banamex and plans to deconsolidate it in 2027, then take it public. It has been under Fed and OCC consent orders since 2020. Even after the Q3 beat, the stock fell about 5% that day.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="num">03 · Choosing the model</p>
+    <h2>Why a bank needs a different model than Exxon</h2>
+    <div class="prose">
+      <p>For Exxon I used a DCF. That doesn't work for a bank. For most companies, debt is how they pay for the business. For a bank, deposits and loans <em>are</em> the business, so free cash flow and a WACC stop meaning much.</p>
+      <p>What does matter is the cash Citi sends back to its owners. So I used a dividend discount model that counts both dividends and buybacks, because buybacks are about 80% of what Citi returns. That is the payout yield of 7.53%, compared with the 2.19% dividend yield you'd see on FactSet.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="num">04 · Dividend discount model</p>
+    <h2>Valuing what Citi actually pays its owners</h2>
+    <div class="two">
+      <div class="card">
+        <h3>Cost of equity</h3>
+        <p class="sub">CAPM: 5.21% + 1.07 × 4.20% = 9.70%</p>
+        <div class="tbl flat"><table class="narrow">
+          <tbody>
+            <tr><td>Risk free rate (10Y Treasury)</td><td>5.21%</td></tr>
+            <tr><td>Equity risk premium (Damodaran)</td><td>4.20%</td></tr>
+            <tr><td>Beta (FactSet 5Y adjusted)</td><td>1.07</td></tr>
+            <tr><td><b>Cost of equity</b></td><td class="pf"><b>9.70%</b></td></tr>
+            <tr><td>Terminal growth (Fed long run nominal GDP)</td><td>4.00%</td></tr>
+            <tr><td>Long run return on tangible equity</td><td>13%</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="card">
+        <h3>Result</h3>
+        <p class="sub">Per share</p>
+        <div class="tbl flat"><table class="narrow">
+          <tbody>
+            <tr><td>PV of 2026E to 2030E payouts</td><td>$46.97</td></tr>
+            <tr><td>Terminal value in 2030</td><td>$186.52</td></tr>
+            <tr><td>PV of terminal value</td><td>$117.39</td></tr>
+            <tr><td><b>Value per share</b></td><td class="pf"><b>$164.36</b></td></tr>
+            <tr><td>Cross check: justified P/TBV</td><td>$160.29</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+    <div class="tbl"><table>
+      <thead><tr><th scope="col">Per share</th><th scope="col">2025A</th><th scope="col">2026E</th><th scope="col">2027E</th><th scope="col">2028E</th><th scope="col">2029E</th><th scope="col">2030E</th></tr></thead>
+      <tbody>
+        <tr><td><b>Dividends + buybacks</b></td><td>$10.58</td><td class="pf">$12.38</td><td class="pf">$13.52</td><td class="pf">$14.82</td><td class="pf">$9.84</td><td class="pf">$10.23</td></tr>
+        <tr><td>Share of earnings paid out</td><td colspan="4" style="text-align:center">Over 100%: returning excess capital</td><td colspan="2" style="text-align:center">69%: sustainable level</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Citi's payouts don't grow at one steady rate. Through 2028 it pays out more than it earns because it is returning extra capital (CET1 of 12.8% vs. an 11.6% minimum). From 2029 it settles at 69%, because growing 4% a year on a 13% return means keeping 4 ÷ 13 = 31% of earnings. So I typed in each year's FactSet payout instead of using the template's single growth rate, divided by today's 1,677.44M shares. I used 4% terminal growth rather than Exxon's inflation rate because a bank grows with the whole economy.</p>
+  </section>
+
+  <section>
+    <p class="num">05 · Cross check and sensitivity</p>
+    <h2>Two methods, within $4 of each other</h2>
+    <div class="prose"><p>The standard way to value a bank is price to tangible book. If Citi earns 13% on its equity, it deserves about 1.58 times its $101.59 tangible book, or $160.29. It trades at 1.20 times today. I also tested the assumptions that move the value most. The line marks the $122.27 share price.</p></div>
+    <div class="card" style="margin-top:12px">
+      <div class="bars">
+        <div class="bar"><span class="lab">3Y beta<br>1.25</span><div class="tr"><div class="f" style="width:calc(146/200*100%)"></div><span class="val" style="left:calc(146/200*100%)">≈ $146</span></div></div>
+        <div class="bar"><span class="lab">Lower return<br>11.5% ROTE</span><div class="tr"><div class="f" style="width:calc(157/200*100%)"></div><span class="val" style="left:calc(157/200*100%)">≈ $157</span></div></div>
+        <div class="bar"><span class="lab">P/TBV cross check<br>1.58x book</span><div class="tr"><div class="f" style="width:calc(160.29/200*100%)"></div><span class="val" style="left:calc(160.29/200*100%)">$160.29</span></div></div>
+        <div class="bar base"><span class="lab"><b>DDM, base case</b><br>beta 1.07 · 13% ROTE</span><div class="tr"><div class="f" style="width:calc(164.36/200*100%)"></div><span class="val" style="left:calc(164.36/200*100%)"><b>$164.36</b></span></div></div>
+        <div class="bar"><span class="lab">Higher return<br>15% ROTE</span><div class="tr"><div class="f" style="width:calc(172/200*100%)"></div><span class="val" style="left:calc(172/200*100%)">≈ $172</span></div></div>
+      </div>
+      <p class="note"><b>What this tells us:</b> every case stays above the price, so the undervaluation isn't riding on one input. The assumption that matters most is the 13% return on tangible equity, since about 71% of the value sits in the terminal period. Analyst targets average about $152, inside this range.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="num">06 · Catalysts and risks</p>
+    <h2>What could move the stock</h2>
+    <div class="sr">
+      <div class="card str"><h3>Catalysts</h3><ul>
+        <li><b>Hitting 13%.</b> Reaching Citi's 2027 to 2028 return target is what the model's value rests on.</li>
+        <li><b>Buybacks.</b> $13.3B repurchased this year against a $30B program.</li>
+        <li><b>Banamex.</b> Deconsolidation in 2027 and an IPO finish the exit from international consumer banking.</li>
+        <li><b>Consent orders.</b> A full audit goes to regulators by early 2027. Lifting the orders would close the last big chapter.</li>
+      </ul></div>
+      <div class="card rsk"><h3>Risks</h3><ul>
+        <li><b>Execution.</b> Most of the value assumes a 13% return that Citi hasn't reached yet.</li>
+        <li><b>Capital rules.</b> The minimum rises to 12.1% in 2028.<span class="m">That could slow the buybacks the model depends on.</span></li>
+        <li><b>Rates.</b> Bank stocks sold off on Oct. 1 as Treasury yields neared 5.3%.</li>
+        <li><b>Priced in.</b> After a 48% a year run, a lot of good news is already in the stock.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="verdict">
+      <p class="num" style="color:var(--gold)">07 · Recommendation</p>
+      <h2>Hold: undervalued, but we already own the bet</h2>
+      <div class="why">
+        <div><h3>Why not sell</h3><p>Both methods put Citi near $160 to $164 against a $122 price, every test case stays above the price, and the turnaround is showing up in earnings.</p></div>
+        <div><h3>Why not buy more</h3><p>Citi is 5.8% of our domestic equity, about 18 times its benchmark weight and the largest overweight in the fund. More would tie the fund even closer to one bank's execution.</p></div>
+        <div><h3>What would change it</h3><p>Revisit adding if Citi reaches a 13% return sooner than planned, or if regulators lift the consent orders.</p></div>
+      </div>
+    </div>
+    <a class="series" href="#xom"><span><span class="k">Also in this series</span><b>ExxonMobil (XOM): a DCF on an Energy holding</b></span><span class="go">Read it →</span></a>
+  </section>
+</main>
+<footer><div class="wrap">Sources: FactSet (prices, All Estimates payout and ROTE forecasts, betas, P/TBV history; Oct. 14, 2026) · Citigroup Q3 2026 earnings release and call · FRED (DGS10) · Damodaran implied equity risk premium · Federal Reserve Summary of Economic Projections. Valuation built in the SMIF course two stage DDM template. For educational purposes; not investment advice.</div></footer>
 </div>
 <div class="view" id="view-memo" hidden>
 <div class="backbar"><div class="in"><a class="who" href="#home">Yafah Russek<span>.</span></a><a href="#projects">← Back to projects</a></div></div>
