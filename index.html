@@ -505,6 +505,19 @@ html[lang="es"] [lang="en"]:not(html){display:none}
 :is(#view-xom,#view-citi) .bar.base .f{background:var(--maroon);opacity:1}
 :is(#view-xom,#view-citi) .bar .val{position:absolute;top:50%;transform:translateY(-50%);margin-left:8px;color:var(--ink);white-space:nowrap}
 @media (max-width:560px){:is(#view-xom,#view-citi) .bar{grid-template-columns:1fr}}
+#view-xom .tor{display:grid;gap:16px}
+#view-xom .trow{display:grid;grid-template-columns:13em 1fr;gap:12px;align-items:center;font-family:var(--mono);font-size:.78rem}
+#view-xom .trow .lab{line-height:1.35;color:var(--muted)}
+#view-xom .trow .lab b{font-family:var(--body);font-size:.98rem;font-weight:600;color:var(--ink)}
+#view-xom .ttr{position:relative;height:26px;background:linear-gradient(90deg,transparent calc(var(--px) - 1px),var(--muted) calc(var(--px) - 1px),var(--muted) calc(var(--px) + 1px),transparent calc(var(--px) + 1px))}
+#view-xom .ttr .lo,#view-xom .ttr .hi{position:absolute;top:0;bottom:0}
+#view-xom .ttr .lo{background:var(--gold);border-radius:4px 0 0 4px}
+#view-xom .ttr .hi{background:var(--fi);border-radius:0 4px 4px 0}
+#view-xom .ttr .base{position:absolute;top:-4px;bottom:-4px;width:3px;margin-left:-1.5px;background:var(--ink);border-radius:2px}
+#view-xom .tkey{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--mono);font-size:.74rem;color:var(--muted);margin:0 0 16px}
+#view-xom .tkey i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:6px}
+#view-xom .tkey i.ln{width:3px;border-radius:0}
+@media (max-width:560px){#view-xom .trow{grid-template-columns:1fr;gap:6px}}
 :is(#view-xom,#view-citi) .sr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:14px}
 @media (max-width:820px){:is(#view-xom,#view-citi) .sr{grid-template-columns:1fr}}
 :is(#view-xom,#view-citi) .sr ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
@@ -641,7 +654,7 @@ html[lang="es"] [lang="en"]:not(html){display:none}
         <div class="body">
           <h3><span lang="en">ExxonMobil holding review</span><span lang="es">Revisión de la posición en ExxonMobil</span></h3>
           <p class="q"><span lang="en">Our fund already owns more ExxonMobil than the benchmark. Should we add, keep, or sell?</span><span lang="es">Nuestro fondo ya tiene más ExxonMobil que el índice de referencia. ¿Debemos comprar más, mantener o vender?</span></p>
-          <p><span lang="en">I was the lead analyst on XOM, one of five Energy holdings our team reviews. I built a DCF from FactSet consensus cash flows with a CAPM discount rate, compared XOM's multiples to Chevron and the sector, and tested how the value changes with beta. The DCF shows upside, but the premium to peers and an already overweight position point to Hold.</span><span lang="es">Fui la analista principal de XOM, una de las cinco posiciones de Energía que revisa nuestro equipo. Construí un DCF con flujos de caja de consenso de FactSet y una tasa de descuento CAPM, comparé los múltiplos de XOM con Chevron y el sector, y probé cómo cambia el valor según la beta. El DCF muestra potencial, pero la prima frente a sus pares y una posición ya sobreponderada apuntan a mantener.</span></p>
+          <p><span lang="en">I was the lead analyst on XOM, one of five Energy holdings our team reviews. I built a DCF from FactSet consensus cash flows with a CAPM discount rate, compared XOM's multiples to Chevron and the sector, and stress tested the inputs one at a time. The DCF shows upside, but an 11.5% miss in operating cash flow would erase it, so with a premium to peers and an already overweight position, the call is Hold.</span><span lang="es">Fui la analista principal de XOM, una de las cinco posiciones de Energía que revisa nuestro equipo. Construí un DCF con flujos de caja de consenso de FactSet y una tasa de descuento CAPM, comparé los múltiplos de XOM con Chevron y el sector, y probé la sensibilidad de cada supuesto por separado. El DCF muestra potencial, pero bastaría que el flujo de caja operativo quedara 11.5% por debajo del consenso para borrarlo; con la prima frente a sus pares y una posición ya sobreponderada, la decisión es mantener.</span></p>
           <a class="btn work" href="#xom"><span lang="en">Read the analysis</span><span lang="es">Leer el análisis</span> →</a>
           <div class="viz kpis" style="margin-top:20px"><span><b>$200.65</b> <span lang="en">DCF value per share</span><span lang="es">valor DCF por acción</span></span><span><b>+22.5%</b> <span lang="en">vs. $163.75 price</span><span lang="es">vs. precio de $163.75</span></span><span><b>Hold</b> <span lang="en">recommendation</span><span lang="es">recomendación</span></span></div>
         </div>
@@ -991,7 +1004,7 @@ html[lang="es"] [lang="en"]:not(html){display:none}
         <tr><td>Dividend yield</td><td class="pf">2.5%</td><td>3.4%</td><td>2.5%</td></tr>
       </tbody>
     </table></div>
-    <p class="note">Part of the premium is earned: higher expected growth than Chevron, low debt, and large buybacks. But ROE trails the sector and Chevron pays more. Peers do not show a bargain.</p>
+    <p class="note">Part of the premium is earned: higher expected growth than Chevron, low debt, and large buybacks. But ROE trails the sector and Chevron pays more. At the sector's P/E, XOM would be worth about $147; at Chevron's price to free cash flow, about $121. Both sit at or below today's price, and the FactSet consensus target of $172.96 is only 5.6% higher. Peers do not show a bargain.</p>
   </section>
 
   <section>
@@ -1034,21 +1047,48 @@ html[lang="es"] [lang="en"]:not(html){display:none}
         <tr><td>Growth</td><td>Base</td><td class="up">+117.8%</td><td class="dn">(5.5%)</td><td class="dn">(12.0%)</td><td class="up">+7.5%</td><td class="up">+6.3%</td></tr>
       </tbody>
     </table></div>
-    <p class="note">Forecasts are FactSet consensus cash from operations minus capex. The 2026 jump is mostly a base effect: 2025 was weak and capex stays near $27B to $29B, so higher oil prices flow almost straight into free cash flow. I chose FactSet's 5 year beta over two conflicting 3 year betas because it uses a longer window, and FRED's breakeven inflation rate for terminal growth because it reflects the market's long run expectation.</p>
+    <div class="two">
+      <div class="card">
+        <h3>Why each year moves</h3>
+        <p class="sub">Every year is FactSet consensus CFO minus capex</p>
+        <div class="tbl flat"><table class="narrow">
+          <tbody>
+            <tr><td><b>2026E</b> Oil spikes above $100 on Middle East disruptions while output grows and capex dips, so a 51% rise in CFO more than doubles FCF.</td><td class="up">+117.8%</td></tr>
+            <tr><td><b>2027E</b> Analysts assume Brent eases to about $80. Most of the drop is capex rising about $1.7B.</td><td class="dn">(5.5%)</td></tr>
+            <tr><td><b>2028E</b> Brent is roughly flat, so this reads as refining, chemical and gas margins normalizing.</td><td class="dn">(12.0%)</td></tr>
+            <tr><td><b>2029E to 2030E</b> Growth from volume, not price: Guyana Hammerhead, the Permian and LNG.</td><td class="up">+7.5% / +6.3%</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="card">
+        <h3>Choices I made, and why</h3>
+        <div class="tbl flat"><table class="narrow">
+          <tbody>
+            <tr><td><b>5Y beta of 0.59.</b> FactSet's published, longer window beta, instead of two 3 year betas that disagree (0.33 and 0.45).</td></tr>
+            <tr><td><b>2.28% terminal growth.</b> The market's long run inflation forecast. The full 30 year yield (5.63%) is a return, not a growth rate, and produced an absurd $988 a share.</td></tr>
+            <tr><td><b>2025 as the base year.</b> It already happened, so it is the starting point, not a future cash flow.</td></tr>
+            <tr><td><b>Fixed a sign error.</b> The template had 2027 at +5.5% when consensus shows a 5.5% decline.</td></tr>
+            <tr><td><b>Conservative rate.</b> FactSet's own 6.76% WACC would give about $243. A dividend discount model gives about $82, but it ignores Exxon's large buybacks, so I used it only as a floor.</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
   </section>
 
   <section>
     <p class="num">04 · Sensitivity</p>
-    <h2>The upside depends on beta</h2>
-    <div class="prose"><p>About 77% of the DCF value comes from the terminal period, so small changes in the discount rate move the answer a lot. Here is the same model under each beta FactSet reports, plus the beta today's price implies. The line marks the $163.75 share price.</p></div>
+    <h2>The upside depends on cash flow holding up</h2>
+    <div class="prose"><p>About 77% of the DCF value comes from the terminal period, so I tested which inputs actually move the $200.65. Each bar changes one input at a time and keeps everything else at the base case.</p></div>
     <div class="card" style="margin-top:12px">
-      <div class="bars">
-        <div class="bar"><span class="lab">3Y snapshot<br>beta 0.33 · 6.63%</span><div class="tr"><div class="f" style="width:calc(250.80/280*100%)"></div><span class="val" style="left:calc(250.80/280*100%)">$250.80</span></div></div>
-        <div class="bar"><span class="lab">3Y price summary<br>beta 0.45 · 7.13%</span><div class="tr"><div class="f" style="width:calc(224.85/280*100%)"></div><span class="val" style="left:calc(224.85/280*100%)">$224.85</span></div></div>
-        <div class="bar base"><span class="lab"><b>5Y, base case</b><br>beta 0.59 · 7.72%</span><div class="tr"><div class="f" style="width:calc(200.65/280*100%)"></div><span class="val" style="left:calc(200.65/280*100%)"><b>$200.65</b></span></div></div>
-        <div class="bar"><span class="lab">Market implied<br>beta 0.88 · 8.94%</span><div class="tr"><div class="f" style="width:calc(164.14/280*100%)"></div><span class="val" style="left:calc(164.14/280*100%)">$164.14</span></div></div>
+      <div class="tkey"><span><i style="background:var(--gold)"></i>Input moves against us</span><span><i style="background:var(--fi)"></i>Input moves in our favor</span><span><i class="ln" style="background:var(--ink)"></i>Base case $200.65</span><span><i class="ln" style="background:var(--muted)"></i>Price $163.75</span></div>
+      <div class="tor">
+        <div class="trow"><span class="lab"><b>Operating cash flow ±10%</b><br>$168.51 to $232.79<br>FactSet consensus CFO every year, capex unchanged</span><div class="ttr" style="--px:21.59%" role="img" aria-label="Operating cash flow ±10%: $168.51 to $232.79"><div class="lo" style="left:25.92%;width:calc(55.14% - 25.92%)"></div><div class="hi" style="left:55.14%;width:calc(84.35% - 55.14%)"></div><span class="base" style="left:55.14%"></span></div></div>
+        <div class="trow"><span class="lab"><b>Discount rate ±0.5 pt</b><br>$183.85 to $220.86<br>7.22% to 8.22%</span><div class="ttr" style="--px:21.59%" role="img" aria-label="Discount rate ±0.5 pt: $183.85 to $220.86"><div class="lo" style="left:39.86%;width:calc(55.14% - 39.86%)"></div><div class="hi" style="left:55.14%;width:calc(73.51% - 55.14%)"></div><span class="base" style="left:55.14%"></span></div></div>
+        <div class="trow"><span class="lab"><b>Terminal growth ±0.5 pt</b><br>$186.99 to $217.08<br>1.78% to 2.78%</span><div class="ttr" style="--px:21.59%" role="img" aria-label="Terminal growth ±0.5 pt: $186.99 to $217.08"><div class="lo" style="left:42.72%;width:calc(55.14% - 42.72%)"></div><div class="hi" style="left:55.14%;width:calc(70.07% - 55.14%)"></div><span class="base" style="left:55.14%"></span></div></div>
+        <div class="trow"><span class="lab"><b>Capex ±10%</b><br>$188.58 to $212.72<br>consensus capex scaled up or down</span><div class="ttr" style="--px:21.59%" role="img" aria-label="Capex ±10%: $188.58 to $212.72"><div class="lo" style="left:44.16%;width:calc(55.14% - 44.16%)"></div><div class="hi" style="left:55.14%;width:calc(66.11% - 55.14%)"></div><span class="base" style="left:55.14%"></span></div></div>
       </div>
-      <p class="note"><b>What this tells us:</b> at a beta of about 0.88, the upside disappears. And the regressions behind every beta explain very little of XOM's returns (R squared of 0.06), so no single number is precise. The model's sensitivity table ranges from about $181 to $227 across discount rates of 7.3% to 8.1% and terminal growth of 1.88% to 2.68%.</p>
+      <p class="note"><b>What this tells us:</b> operating cash flow is by far the biggest driver. Capex stays near $27B to $29B either way, so a 10% drop in operating cash flow becomes about a 16% drop in free cash flow. It only has to come in about <b>11.5% below consensus</b> for the value to fall to today's price. That is not a big miss for an oil company: consensus assumes Brent around $80, and it averaged about $68 in 2025.</p>
+      <p class="note"><b>Why not a beta sensitivity:</b> FactSet's two published betas, 0.45 and 0.59, give about $225 and $201, but the regressions behind them are weak (R squared of 0.06), and the discount rate bar already covers that range. I dropped the market implied beta because it is circular: it assumes today's price is right.</p>
     </div>
   </section>
 
@@ -1059,13 +1099,13 @@ html[lang="es"] [lang="en"]:not(html){display:none}
       <div class="card str"><h3>Catalysts</h3><ul>
         <li><b>2030 plan.</b> About $35B more cash flow than 2024 at constant prices.</li>
         <li><b>Guyana Hammerhead.</b> Approved, adding about 150,000 barrels a day from 2029.</li>
-        <li><b>Permian and LNG.</b> Record Permian output above 1.8M barrels a day, on plan for 9% annual growth.</li>
-        <li><b>Shareholder returns.</b> Large buybacks and a growing dividend.</li>
+        <li><b>Permian and LNG.</b> Record Permian output above 1.8M barrels a day, on plan for 9% annual growth, and Golden Pass LNG produced first LNG in March.</li>
+        <li><b>Shareholder returns.</b> About $20B of buybacks in 2025 and a growing dividend.</li>
       </ul></div>
       <div class="card rsk"><h3>Risks</h3><ul>
-        <li><b>Oil prices.</b> Consensus assumes about $80 Brent.<span class="m">A drop toward 2025's $68 would push cash flow below the forecasts in my DCF.</span></li>
-        <li><b>Model risk.</b> Terminal value is 77% of the DCF and beta is uncertain.</li>
-        <li><b>Execution.</b> Capex overruns or project delays.</li>
+        <li><b>Oil prices.</b> Consensus assumes about $80 Brent, versus $68 in 2025.<span class="m">Part of this year's strength came from Middle East disruptions that are already easing. A drop toward $68 could easily cause the 11.5% cash flow miss that erases the upside.</span></li>
+        <li><b>Model risk.</b> Terminal value is 77% of the DCF, so small changes in the discount rate or growth rate move the answer.</li>
+        <li><b>Execution.</b> Capex of $28B to $32B a year from 2027 to 2030.<span class="m">Delays in Guyana, the Permian or LNG would raise spending without the cash flow to match.</span></li>
         <li><b>Legal.</b> A Supreme Court climate liability case, with a decision expected by June 2027.<span class="m">A watch item, not a thesis breaker.</span></li>
       </ul></div>
     </div>
@@ -1076,15 +1116,15 @@ html[lang="es"] [lang="en"]:not(html){display:none}
       <p class="num" style="color:var(--gold)">06 · Recommendation</p>
       <h2>Hold: keep the position, don't add to it</h2>
       <div class="why">
-        <div><h3>Why not sell</h3><p>The DCF shows 22.5% upside under a conservative beta, cash flow is strong, and the catalysts are concrete.</p></div>
-        <div><h3>Why not buy more</h3><p>XOM trades at a premium to peers, sits near its consensus target after a 49% run, and the fund is already overweight.</p></div>
+        <div><h3>Why not sell</h3><p>Fairly valued is a reason to stop adding, not to exit. The DCF still shows 22.5% upside at a conservative discount rate, cash flow is strong, and the catalysts are funded.</p></div>
+        <div><h3>Why not buy more</h3><p>An 11.5% miss in operating cash flow erases the upside, XOM trades at a premium to peers near its $173 consensus target after a 49% run, and the fund is already overweight.</p></div>
         <div><h3>What would change it</h3><p>Add on strong Q3 results (Oct. 23) or a pullback. Reduce if cash flow weakens or oil falls toward $68.</p></div>
       </div>
     </div>
     <a class="series" href="#citi"><span><span class="k">Also in this series</span><b>Citigroup (C): why a bank needs a different model</b></span><span class="go">Read it →</span></a>
   </section>
 </main>
-<footer><div class="wrap">Sources: FactSet (prices, consensus estimates, betas, peer multiples; Oct. 5 and 6, 2026) · FRED (DGS10, 30 year breakeven inflation) · Damodaran implied equity risk premium · ExxonMobil Q2 2026 results and 2030 corporate plan · Reuters. Valuation built in the SMIF course DCF template. For educational purposes; not investment advice.</div></footer>
+<footer><div class="wrap">Sources: FactSet (prices, consensus estimates, betas, peer multiples; Oct. 5 and 6, 2026) · FRED (DGS10, 30 year breakeven inflation) · Damodaran implied equity risk premium · ExxonMobil Q2 2026 results, 2030 corporate plan and Guyana Hammerhead release · Reuters (Gulf oil flows, Supreme Court climate case) · Gas Processing News (Golden Pass LNG). Valuation built in the SMIF course DCF template. For educational purposes; not investment advice.</div></footer>
 </div>
 <div class="view" id="view-citi" hidden>
 <div class="backbar"><div class="in"><a class="who" href="#home">Yafah Russek<span>.</span></a><a href="#projects">← Back to projects</a></div></div>
